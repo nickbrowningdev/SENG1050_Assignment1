@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE bookings [
+
+<!ELEMENT bookings (booking*)>
+  <!ELEMENT booking (passenger, address?, phone?, leg+)>
+     
+  <!ELEMENT passenger (#PCDATA)>
+  <!ELEMENT address (#PCDATA)>
+  <!ELEMENT phone (#PCDATA)>
+  <!ELEMENT leg 
+	(date, flight, depart_code, depart_time, arrive_code, arrive_time, class?, aircraft?)>
+  <!ELEMENT date (#PCDATA)>
+  <!ELEMENT flight (#PCDATA)>
+  <!ELEMENT depart_code (#PCDATA)>
+  <!ELEMENT depart_time (#PCDATA)>
+  <!ELEMENT arrive_code (#PCDATA)>
+  <!ELEMENT arrive_time (#PCDATA)>
+  <!ELEMENT class (#PCDATA)>
+  <!ELEMENT aircraft (#PCDATA)>
+]>
+
+
+<bookings>
+	<booking>
+		<passenger>Paul J. Franks</passenger>
+		<address>University of Newcastle, University Drive, Callaghan, 2308</address>
+		<phone>0249216175</phone>
+		<leg>
+				<date>11 Aug 2003</date>
+				<flight>QF005</flight>
+				<depart_code>SYD</depart_code>
+				<depart_time>15:45</depart_time>
+				<arrive_code>SIN</arrive_code>
+				<arrive_time>21:35</arrive_time>
+				<class>Economy</class>
+				<aircraft>744</aircraft>
+		</leg>
+			
+		<leg>
+				<date>21 Aug 2003</date>
+				<flight>QF010</flight>
+				<depart_code>SIN</depart_code>
+				<depart_time>19:45</depart_time>
+				<arrive_code>MEL</arrive_code>
+				<arrive_time>04:55</arrive_time>
+				<class>Economy</class>
+		</leg>
+			
+		<leg>
+			<date>24 Aug 2003</date>
+			<flight>QF434</flight>
+			<depart_code>MEL</depart_code>
+			<depart_time>13:00</depart_time>
+			<arrive_code>SYD</arrive_code>
+			<arrive_time>14:20</arrive_time>
+			<class>Business</class>
+			<aircraft>73H</aircraft>
+		</leg>
+	</booking>
+</bookings>

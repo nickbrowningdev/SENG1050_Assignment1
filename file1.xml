@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE template [
+
+<!ELEMENT template (farm*)>
+  <!ELEMENT farm (goods_type, farm_name, farm_logo?, farm_picture, farm_description, url, address, phone+, delivery, goods+)>
+     
+  <!ELEMENT goods_type (#PCDATA)>
+  <!ELEMENT farm_name (#PCDATA)>
+  <!ELEMENT farm_logo (#PCDATA)>
+  <!ELEMENT farm_picture (#PCDATA)>
+  <!ELEMENT farm_description (#PCDATA)>
+  <!ELEMENT url (#PCDATA)>
+  <!ELEMENT address (#PCDATA)>
+  <!ELEMENT phone (#PCDATA)>
+  <!ELEMENT delivery 
+	(min_price, deli_fee)>
+  <!ELEMENT min_price (#PCDATA)>
+  <!ELEMENT deli_fee (#PCDATA)>
+  <!ELEMENT goods 
+	(goods_name, goods_pic)>
+  <!ELEMENT goods_name (#PCDATA)>
+  <!ELEMENT goods_pic (#PCDATA)>
+]>
+
+<template>
+	<farm>
+		<goods_type>Vegetable</goods_type>
+		<farm_name>Evergreen Farm</farm_name>
+		<farm_logo></farm_logo>
+		<farm_picture>img/farm2.png</farm_picture>
+		<farm_description></farm_description>
+		<url>https://www.evergreenfarm.com.au/</url>
+		<address>123 Ironbark Lane, Nulkaba, NSW</address>
+		<phone>0491 570 157</phone>
+		<phone>1900 654 323</phone>
+		<delivery>
+				<min_price></min_price>
+				<deli_fee></deli_fee>
+		</delivery>
+		<goods>
+				<goods_name></goods_name>
+				<goods_pic></goods_pic>
+		</goods>
+	</farm>
+	
+	<farm>
+		<goods_type>Fruit</goods_type>
+		<farm_name>Armadillo Farm</farm_name>
+		<farm_logo></farm_logo>
+		<farm_picture>img/farm1.png</farm_picture>
+		<farm_description></farm_description>
+		<url>https://www.armadillofarm.com.au/</url>
+		<address>300 Mangrove Creek, Mangrove, NSW</address>
+		<phone>0491 570 156</phone>
+		<phone>1900 654 321</phone>
+		<delivery>
+				<min_price></min_price>
+				<deli_fee></deli_fee>
+		</delivery>
+		<goods>
+				<goods_name></goods_name>
+				<goods_pic></goods_pic>
+		</goods>
+	</farm>
+	
+	<farm>
+		<goods_type>Nuts</goods_type>
+		<farm_name>Dixon's Farm</farm_name>
+		<farm_logo></farm_logo>
+		<farm_picture>img/farm3.png</farm_picture>
+		<farm_description></farm_description>
+		<url>https://www.dixonfarm.com.au/</url>
+		<address>380 Horse Flat Lane, Mudgee, NSW</address>
+		<phone>0491 570 160</phone>
+		<phone>1900 654 324</phone>
+		<delivery>
+				<min_price></min_price>
+				<deli_fee></deli_fee>
+		</delivery>
+		<goods>
+				<goods_name></goods_name>
+				<goods_pic></goods_pic>
+		</goods>
+	</farm>
+</template>	

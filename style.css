@@ -1,0 +1,21 @@
+body {background-image: url("img/background.jpg");
+		margin-left: 1cm
+		}
+		
+h1 {color: white;
+text-align:center}
+
+nav{text-align:center}
+
+footer {text-align:right;
+color: white}
+
+address {text-align:right;
+color: white}
+
+ul {color: white}
+
+a:link{color:white}
+a:visited{color:purple}
+a:active{color:white}
+a:hover {font-size: 120%; color:white}
